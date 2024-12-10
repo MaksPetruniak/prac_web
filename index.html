@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twingate</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/api.png">
+  <link rel="shortcut icon" href="media/api.png" type="image/x-icon">
+  <meta name="description" content="Сайт-візитка VPN-сервісу">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
+  <div id="demo-modal" class="modal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Закрити">&times;</button>
+      <h2>Попросити демонстрацію</h2>
+      <p>Заповніть форму нижче, щоб запросити демонстрацію:</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+        </div>
+        <button type="submit" class="submit-button">Надіслати</button>
+      </form>
+    </div>
+  </div>
+  <header class="hero-header">
+    <div class="left-nav-div">
+      <a href="#" class="hero-logo">
+        <img src="media/nav-logo.png" alt="Логотип Twingate">
+      </a>
+      <nav>
+        <a href="product.html">Продукт</a>
+        <a href="#docs">Документація</a>
+        <a href="partners.html">Партнери</a>
+        <a href="#resources">Ресурси</a>
+        <a href="#customers">Клієнти</a>
+        <a href="#pricing">Ціни</a>
+      </nav>
+    </div>
+    <div class="hero-buttons">
+      <a href="#" id="demo-button" class="hero-button hero-button-secondary">Попросити демонстрацію</a>
+      <a href="#" class="hero-button hero-button-primary">Спробувати безкоштовно</a>
+      <a href="#" class="hero-button hero-button-sign">Увійти</a>
+    </div>
+  </header>
+  <section class="hero-section">
+    <div class="hero-left">
+      <div class="hero-sub-title">Представляємо Twingate для MSP</div>
+      <h1>Відмовся від <br> свого VPN</h1>
+      <p>Twingate робить доступ до мережі за принципом Zero Trust легким для розгортання, ще легшим для використання та
+        завжди безпечним.</p>
+      <div class="hero-buttons">
+        <a href="#try-free" class="hero-button hero-button-primary">Спробувати Twingate <i
+            class="fa-solid fa-chevron-right" style="color: #1e1f0c;"></i></a>
+        <a href="#request-demo" class="hero-button hero-button-secondary">Запитати демонстрацію <i
+            class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+    <div class="hero-divider"></div>
+  </section>
+  <section class="trusted-section">
+    <img src="media/screen-screen.png" alt="Central Image" class="trusted-image">
+    <div class="trusted-block-br">
+      <div class="trusted-title">
+        <h2>Нам довіряють швидкорозтучі компанії з усього світу</h2>
+      </div>
+      <div class="trusted-logos">
+        <div class="trusted-logo"><img src="media/blend.png" alt="Blend"></div>
+        <div class="trusted-logo"><img src="media/bloom.png" alt="Bloomreach"></div>
+        <div class="trusted-logo"><img src="media/cameo.png" alt="Cameo"></div>
+        <div class="trusted-logo"><img src="media/hippo.png" alt="Hippo"></div>
+        <div class="trusted-logo"><img src="media/bitpanda.png" alt="Bitpanda"></div>
+        <div class="trusted-logo"><img src="media/change.png" alt="Chargebee"></div>
+        <div class="trusted-logo"><img src="media/hirez.png" alt="Hi-Rez Studios"></div>
+        <div class="trusted-logo"><img src="media/homebase.png" alt="Homebase"></div>
+        <div class="trusted-logo"><img src="media/cerebral.png" alt="Cerebral"></div>
+        <div class="trusted-logo"><img src="media/libers.png" alt="Liberis"></div>
+        <div class="trusted-logo"><img src="media/webflow.png" alt="Webflow"></div>
+        <div class="trusted-logo"><img src="media/modernh.png" alt="Modern Health"></div>
+      </div>
+    </div>
+  </section>
+  <section class="zt-zero-trust-section">
+    <div class="zt-image-container">
+      <img src="media/trustblockimage.png" alt="Zero Trust Network Access">
+    </div>
+    <div class="zt-text-container">
+      <p class="zt-subtitle">Доступ до мережі з принципом Zero Trust</p>
+      <h2 class="zt-title">Могутні контролі доступу,<br> блискавична швидкість</h2>
+      <p class="zt-description">
+        Twingate встановлює прямі з'єднання "peer-to-peer" з захищеними ресурсами,
+        при цьому кожен запит перевіряється <br> перед тим, як він залишає пристрій.
+      </p>
+      <button class="zt-cta-button">Як працює Twingate <i class="fa-solid fa-chevron-right"
+          style="color: #ffffff;"></i></button>
+    </div>
+  </section>
+  <section class="zt-card-section">
+    <div class="zt-card">
+      <div class="zt-card-image">
+        <img src="media/trustcard1.png" alt="Prod Cluster">
+      </div>
+      <div class="zt-card-content">
+        <h3 class="zt-card-title">Обмежте вплив та точки входу</h3>
+        <p class="zt-card-description">
+          Запобігайте латеральному трафіку та обмежте вашу атакувальну поверхню за допомогою прямих з'єднань
+          "peer-to-peer", що знаходяться за вашим брандмауером.
+        </p>
+        <button class="zt-card-button">Комунікація "peer-to-peer" <i class="fa-solid fa-chevron-right"
+            style="color: #ffffff;"></i></button>
+      </div>
+    </div>
+    <div class="zt-card">
+      <div class="zt-card-image">
+        <img src="media/trustcard2.png" alt="Мережевий трафік">
+      </div>
+      <div class="zt-card-content">
+        <h3 class="zt-card-title">Моніторинг вашої мережевої активності</h3>
+        <p class="zt-card-description">
+          Моніторьте та адаптуйте доступні політики з контролю доступу за допомогою журналів та аналітики, що дають
+          видимість на вашій мережі.
+        </p>
+        <button class="zt-card-button">Мережеві аналітики <i class="fa-solid fa-chevron-right"
+            style="color: #ffffff;"></i></button>
+      </div>
+    </div>
+  </section>
+  <section class="secureco-security-ecosystem">
+    <div class="secureco-left">
+      <h2 class="secureco-title">Створіть екосистему безпеки класу "кращий у своєму роді"</h2>
+      <p class="secureco-description">
+        Twingate — це центральний шар оркестрації Zero Trust, що дозволяє створити екосистему безпеки класу "кращий у
+        своєму роді",
+        не змінюючи вашу мережу. Використовуйте готові інтеграції з основними IdP, MDM/EDR, SIEM, постачальниками DOH та
+        іншими.
+      </p>
+      <button class="secureco-button">Досліджуйте інтеграції <i class="fa-solid fa-chevron-right"
+          style="color: #ffffff;"></i></button>
+    </div>
+    <div class="secureco-right">
+      <div class="secureco-card-grid">
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/crowds.png" alt="CrowdStrike">
+          </div>
+          <h3 class="secureco-card-title">CrowdStrike</h3>
+          <p class="secureco-card-description">Перевірка пристроїв</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/azure.png" alt="Azure AD">
+          </div>
+          <h3 class="secureco-card-title">Azure AD</h3>
+          <p class="secureco-card-description">Синхронізація користувачів та груп</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/pulumi.png" alt="Pulumi">
+          </div>
+          <h3 class="secureco-card-title">Pulumi</h3>
+          <p class="secureco-card-description">Автоматизація деплойменту</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/intune.png" alt="Intune">
+          </div>
+          <h3 class="secureco-card-title">Intune</h3>
+          <p class="secureco-card-description">Перевірка пристроїв</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/okta.png" alt="Okta">
+          </div>
+          <h3 class="secureco-card-title">Okta</h3>
+          <p class="secureco-card-description">Синхронізація користувачів та груп</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/terraf.png" alt="Terraform">
+          </div>
+          <h3 class="secureco-card-title">Terraform</h3>
+          <p class="secureco-card-description">Автоматизація деплойменту</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/kandji.png" alt="Kandji">
+          </div>
+          <h3 class="secureco-card-title">Kandji</h3>
+          <p class="secureco-card-description">Перевірка пристроїв</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/google.png" alt="Google Workspace">
+          </div>
+          <h3 class="secureco-card-title">Google Workspace</h3>
+          <p class="secureco-card-description">Синхронізація користувачів та груп</p>
+        </div>
+        <div class="secureco-card">
+          <div class="secureco-card-icon">
+            <img src="media/nextd.png" alt="NextDNS">
+          </div>
+          <h3 class="secureco-card-title">NextDNS</h3>
+          <p class="secureco-card-description">Фільтрація та шифрування DNS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="grancontr-container">
+    <!-- Верхній блок -->
+    <div class="grancontr-top-block">
+      <p class="grancontr-subtitle">Гранульовані керування доступом</p>
+      <h2 class="grancontr-title">Впроваджуйте доступ за принципом <br>найменших привілеїв</h2>
+      <p class="grancontr-description">
+        Захищайте корпоративні ресурси, такі як SaaS-додатки, хмарні середовища та
+        локальні сервіси, за допомогою детальних політик доступу, що базуються на користувачах,
+        місцезнаходженні та пристрої.
+      </p>
+    </div>
+    <!-- Широкий блок -->
+    <div class="grancontr-wide-block">
+      <div class="grancontr-text-content">
+      </div>
+      <div class="grancontr-image">
+        <img src="media/granularwide.png" alt="privilege access">
+      </div>
+    </div>
+
+    <!-- Блок із картками -->
+    <div class="grancontr-cards">
+      <div class="grancontr-card">
+        <div class="grancontr-icon"><img src="media/granicon1.png" alt="device"></div>
+        <h3 class="grancontr-card-title">Інтелект пристроїв</h3>
+        <p class="grancontr-card-description">
+          Більше ніякого важкого обслуговування та постійних скарг від користувачів.
+        </p>
+        <a href="#" class="grancontr-button">Дізнатися більше &gt;</a>
+      </div>
+      <div class="grancontr-card">
+        <div class="grancontr-icon"><img src="media/granicon2.png" alt="mfa"></div>
+        <h3 class="grancontr-card-title">Універсальний MFA</h3>
+        <p class="grancontr-card-description">
+          Застосовуйте TOTP, біометричну та MFA на основі ключа безпеки до будь-якого типу ресурсу.
+        </p>
+        <a href="#" class="grancontr-button">Дізнатися більше &gt;</a>
+      </div>
+      <div class="grancontr-card">
+        <div class="grancontr-icon"><img src="media/granicon3.png" alt="compilance"></div>
+        <h3 class="grancontr-card-title">Безшовна відповідність вимогам</h3>
+        <p class="grancontr-card-description">
+          Відповідайте найсуворішим вимогам для SOC 2, HIPAA, GDPR та інших.
+        </p>
+        <a href="#" class="grancontr-button">Дізнатися більше &gt;</a>
+      </div>
+    </div>
+  </div>
+  <div class="deploytwin-container">
+    <div class="deploytwin-section">
+      <!-- Лівий блок -->
+      <div class="deploytwin-left-block">
+        <h2 class="deploytwin-title">Розгорніть Twingate у вашій мережі</h2>
+        <p class="deploytwin-description">
+          Слідуйте нашим посібникам, щоб розгорнути Twingate на AWS,<br> GCP, Azure або Linux сервері.
+        </p>
+        <div class="deploytwin-buttons">
+          <a href="#" class="deploytwin-button">Зареєструватися <i class="fa-solid fa-chevron-right"
+              style="color: #ffffff;"></i></a>
+          <a href="#" class="deploytwin-button-req">Запитати демонстрацію <i class="fa-solid fa-chevron-right"
+              style="color: #ffffff;"></i></a>
+        </div>
+      </div>
+
+      <!-- Правий блок -->
+      <div class="deploytwin-right-block">
+        <div class="deploytwin-card">
+          <div class="deploytwin-icon"><img src="media/aws.png" alt="aws"></div>
+          <p class="deploytwin-card-description">Розгорнути на</p>
+          <h3 class="deploytwin-card-title">AWS</h3>
+        </div>
+        <div class="deploytwin-card">
+          <div class="deploytwin-icon"><img src="media/gsp.png" alt="gcp"></div>
+          <p class="deploytwin-card-description">Розгорнути на</p>
+          <h3 class="deploytwin-card-title">GCP</h3>
+        </div>
+        <div class="deploytwin-card">
+          <div class="deploytwin-icon"><img src="media/azureic.png" alt="azure"></div>
+          <p class="deploytwin-card-description">Розгорнути на</p>
+          <h3 class="deploytwin-card-title">Azure</h3>
+        </div>
+        <div class="deploytwin-card">
+          <div class="deploytwin-icon"><img src="media/linux.png" alt="linux"></div>
+          <p class="deploytwin-card-description">Розгорнути на</p>
+          <h3 class="deploytwin-card-title">Linux</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-container">
+    <div class="journey-section">
+      <!-- Лівий блок -->
+      <div class="journey-left-block">
+        <p class="journey-subtitle">Zero Trust як код</p>
+        <h2 class="journey-title">Автоматизуйте свій <br>шлях до Zero Trust</h2>
+        <p class="journey-description">
+          Підвищіть безпеку до швидкості DevOps завдяки API-орієнтованому <br>
+          дизайну, який легко інтегрується у ваш стек без змін <br>
+          інфраструктури. Просто оберіть свій IaC, виберіть VPC і розгорніть.
+        </p>
+        <div class="journey-cards">
+          <div class="journey-card">
+            <div class="journey-icon"><img src="media/terraf.png" alt="terraform"></div>
+            <h3 class="journey-card-title">Розгорніть із</h3>
+            <p class="journey-card-description">Terraform</p>
+          </div>
+          <div class="journey-card">
+            <div class="journey-icon"><img src="media/pulumi.png" alt="pulumi"></div>
+            <h3 class="journey-card-title">Розгорніть із</h3>
+            <p class="journey-card-description">Pulumi</p>
+          </div>
+          <div class="journey-card">
+            <div class="journey-icon"><img src="media/api.png" alt="api"></div>
+            <h3 class="journey-card-title">Розгорніть із</h3>
+            <p class="journey-card-description">Нашим API</p>
+          </div>
+        </div>
+        <p class="journey-quote">
+          "Twingate – це потужна платформа, яка дозволяє нам <br>
+          програмно розгортати та підтримувати підхід Zero Trust до <br>
+          нашої інфраструктури."
+        </p>
+        <p class="journey-citation">Пол Гатрі – Офіцер інформаційної безпеки, Blend</p>
+      </div>
+      <div class="journey-right-block">
+        <img src="media/journey.png" alt="Code Example">
+      </div>
+    </div>
+  </div>
+  <div class="scalesecurity-container">
+    <!-- Лівий блок -->
+    <div class="scalesecurity-left-block">
+      <p class="scalesecurity-subtitle">Безпека у великому масштабі</p>
+      <h2 class="scalesecurity-title">Спроєктовано для надійності</h2>
+      <div class="scalesecurity-cards">
+        <div class="scalesecurity-card">
+          <h3 class="scalesecurity-card-title">+196%</h3>
+          <p class="scalesecurity-card-description">Збільшення пропускної здатності</p>
+        </div>
+        <div class="scalesecurity-card">
+          <h3 class="scalesecurity-card-title">-87%</h3>
+          <p class="scalesecurity-card-description">Зменшення кількості заявок у техпідтримку</p>
+        </div>
+      </div>
+      <p class="scalesecurity-description">
+        Унікальна мережева архітектура Twingate усуває центральні вузькі місця, характерні для застарілих рішень, які
+        уповільнюють роботу команд.
+      </p>
+      <a href="#" class="scalesecurity-button">Дослідити архітектуру <i class="fa-solid fa-chevron-right"
+          style="color: #ffffff;"></i></a>
+    </div>
+
+    <div class="scalesecurity-right-block">
+      <img src="media/securscale.png" alt="Globe Visualization">
+    </div>
+  </div>
+  <section class="growing-section">
+    <div class="growing-content">
+      <h2 class="growing-title">Забезпечуємо безпеку для зростаючих<br> компаній у світі</h2>
+      <a href="#" class="growing-button">Дізнатися історії клієнтів <i class="fa-solid fa-chevron-right"
+          style="color: #ffffff;"></i></a>
+      <div class="growing-cards">
+        <div class="growing-card">
+          <img src="media/blendcard.png" alt="Blend" class="growing-card-image">
+          <p class="growing-card-description">
+            “Ми зробили значні інвестиції в автоматизацію у Blend, і
+            Twingate — це потужна платформа, яка дозволяє нам
+            програмно впроваджувати та підтримувати підхід Zero Trust
+            до нашої інфраструктури.”
+          </p>
+          <div class="growing-title-box">
+            <p class="growing-brand">Blend</p> <span class="growing-card-title">• Фінтех</span>
+          </div>
+        </div>
+        <div class="growing-card">
+          <img src="media/kooapps.png" alt="Kooapps" class="growing-card-image">
+          <p class="growing-card-description">
+            “Використання Twingate набагато простіше порівняно
+            з тим, як ми працювали раніше через VPN. Twingate легше
+            впровадити, налаштувати та підтримувати, це зручніше для наших користувачів,
+            і ми отримуємо всі переваги безпеки, які пропонує Zero Trust.”
+          </p>
+          <div class="growing-title-box">
+            <p class="growing-brand">Kooapps</p><span class="growing-card-title">• Ігрова індустрія</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vpn-replace-section">
+    <div class="vpn-replace-content">
+      <h2 class="vpn-replace-title">VPN-заміна, яку полюбить ваша команда.</h2>
+      <div class="vpn-replace-buttons">
+        <a href="#" class="vpn-replace-button vpn-replace-primary">Спробувати Twingate безкоштовно <i
+            class="fa-solid fa-chevron-right" style="color: #1e1f0c;"></i></a>
+        <a href="#" class="vpn-replace-button vpn-replace-secondary">Замовити демо <i class="fa-solid fa-chevron-right"
+            style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo-section">
+        <img src="media/aicpa.png" alt="aicpa soc" class="footer-sticker">
+        <img src="media/nav-logo.png" alt="aicpa soc" class="footer-logo">
+        <p>Авторські права © 2023 Twingate.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Рішення</h4>
+          <ul>
+            <li><a href="#">Доступ Zero Trust</a></li>
+          </ul>
+          <div class="footer-doc">
+            <h4>Документація</h4>
+            <ul>
+              <li><a href="#">Швидкий старт</a></li>
+              <li><a href="#">Варіанти використання</a></li>
+              <li><a href="#">Архітектура</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Twingate Labs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>Ресурси</h4>
+          <ul>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Клієнти</a></li>
+            <li><a href="#">Біла книга</a></li>
+            <li><a href="#">Історія змін</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Компанія</h4>
+          <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Кар'єра</a></li>
+            <li><a href="#">Ціни</a></li>
+            <li><a href="#">Партнери</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Конфіденційність</a></li>
+            <li><a href="#">Політика</a></li>
+            <li><img src="media/checksvg.png" alt="іконка перевірки"></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Підтримка</h4>
+          <ul>
+            <li><a href="#">Зв'язатися з відділом продажів</a></li>
+            <li><a href="#">Отримати допомогу</a></li>
+            <li><a href="#">Поширені питання</a></li>
+            <li><a href="#">Спробувати безкоштовно</a></li>
+            <li><a href="#">Замовити демо</a></li>
+            <li><a href="#">Завантажити</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status">
+        <img src="media/systemsvg.png" alt="системний статус">
+        <p>Усі системи працюють стабільно</p>
+      </div>
+      <div class="footer-platforms">
+        <a href="#" class="platform-button">
+          <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+          macOS
+        </a>
+        <a href="#" class="platform-button">
+          <i class="fa-brands fa-windows" style="color: #ffffff;"></i>
+          Windows
+        </a>
+        <a href="#" class="platform-button">
+          <i class="fa-brands fa-linux" style="color: #ffffff;"></i>
+          Linux
+        </a>
+        <a href="#" class="platform-button">
+          <i class="fa-brands fa-chrome" style="color: #ffffff;"></i>
+          Chrome
+        </a>
+        <a href="#" class="platform-button">
+          <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+          iOS
+        </a>
+        <a href="#" class="platform-button">
+          <i class="fa-brands fa-android" style="color: #ffffff;"></i>
+          Android
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
